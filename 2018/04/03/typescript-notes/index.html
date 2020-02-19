@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png?v=6.0.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png?v=6.0.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png?v=6.0.3">
+
+
+  <link rel="mask-icon" href="/fav/safari-pinned-tab.svg?v=6.0.3" color="#222">
+
+
+  <link rel="manifest" href="/fav/site.webmanifest">
+
+
+  <meta name="msapplication-config" content="/fav/browserconfig.xml" />
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'JH5MLYG5WS',
+      apiKey: '471eeab53866e42e0373905a300e3e9d',
+      indexName: 'hexo_blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="TypeScript,TS," />
+
+
+<meta name="description" content="Ref Official Documentation  Basic TypesBooleanlet isDone: boolean = false Number1234let decimal: number = 6;let hex: number = 0xf00d;let binary: number = 0b1010;let octal: number = 0o744; StringJust l">
+<meta name="keywords" content="TypeScript,TS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TypeScript Notes">
+<meta property="og:url" content="http://msftbot.com/2018/04/03/typescript-notes/index.html">
+<meta property="og:site_name" content="Franklin&#39;s Blog">
+<meta property="og:description" content="Ref Official Documentation  Basic TypesBooleanlet isDone: boolean = false Number1234let decimal: number = 6;let hex: number = 0xf00d;let binary: number = 0b1010;let octal: number = 0o744; StringJust l">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-19T10:43:26.847Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TypeScript Notes">
+<meta name="twitter:description" content="Ref Official Documentation  Basic TypesBooleanlet isDone: boolean = false Number1234let decimal: number = 6;let hex: number = 0xf00d;let binary: number = 0b1010;let octal: number = 0o744; StringJust l">
+
+
+
+
+
+
+  <link rel="canonical" href="http://msftbot.com/2018/04/03/typescript-notes/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+  <title>TypeScript Notes | Franklin's Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31462879-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31462879-2');
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f0bcacb43e4dadb14cb044ab5410cd76";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Franklin's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+  
+  
+  
+    
+      
+    
+    <a href="https://github.com/myfreedom614" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+    
+      </a>
+    
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://msftbot.com/2018/04/03/typescript-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Franklin Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Franklin's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">TypeScript Notes</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-03T08:23:40+00:00">2018-04-03</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Dev/" itemprop="url" rel="index"><span itemprop="name">Dev</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h1><ul>
+<li><a href="http://www.typescriptlang.org/docs/home.html" target="_blank" rel="noopener">Official Documentation</a></li>
+</ul>
+<h1 id="Basic-Types"><a href="#Basic-Types" class="headerlink" title="Basic Types"></a><a href="http://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" rel="noopener">Basic Types</a></h1><h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><p><code>let isDone: boolean = false</code></p>
+<h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let decimal: number = 6;</span><br><span class="line">let hex: number = 0xf00d;</span><br><span class="line">let binary: number = 0b1010;</span><br><span class="line">let octal: number = 0o744;</span><br></pre></td></tr></table></figure>
+<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><p>Just like JavaScript, TypeScript also uses double quotes (“) or single quotes (‘) to surround string data.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let color:string = &quot;blue&quot;</span><br><span class="line">color = &apos;red&apos;</span><br></pre></td></tr></table></figure></p>
+<p>Template: Surrounded by the backtick/backquote (`) character, and embedded expressions are of the form ${ expr }.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let fullName: string = `Bob Bobbington`;</span><br><span class="line">let age: number = 37;</span><br><span class="line">let sentence: string = `Hello, my name is $&#123; fullName &#125;.</span><br><span class="line">I&apos;ll be $&#123; age + 1 &#125; years old next month.`;</span><br></pre></td></tr></table></figure></p>
+<p>Equals to:</p>
+<p><code>let sentence: string = &quot;Hello, my name is &quot; + fullName + &quot;.\n\n&quot; + &quot;I&#39;ll be &quot; + (age + 1) + &quot; years old next month.&quot;;</code></p>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><ul>
+<li><p>Use the type of the elements followed by [] to denote an array of that element type</p>
+<p><code>let list: number[] = [1, 2, 3];</code></p>
+</li>
+<li><p>The second way uses a generic array type, Array<elemtype>:</elemtype></p>
+<p><code>let list: Array&lt;number&gt; = [1, 2, 3];</code></p>
+</li>
+</ul>
+<h2 id="Tuple"><a href="#Tuple" class="headerlink" title="Tuple"></a>Tuple</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Declare a tuple type</span><br><span class="line">let x: [string, number];</span><br><span class="line">// Initialize it</span><br><span class="line">x = [&quot;hello&quot;, 10]; // OK</span><br><span class="line">// Initialize it incorrectly</span><br><span class="line">x = [10, &quot;hello&quot;]; // Error</span><br></pre></td></tr></table></figure>
+<p>Access element with index:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(x[0].substr(1)); // OK</span><br><span class="line">console.log(x[1].substr(1)); // Error, &apos;number&apos; does not have &apos;substr&apos;</span><br></pre></td></tr></table></figure>
+<p>When accessing an element outside the set of known indices, a union type is used instead:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x[3] = &quot;world&quot;; // OK, &apos;string&apos; can be assigned to &apos;string | number&apos;</span><br><span class="line"></span><br><span class="line">console.log(x[5].toString()); // OK, &apos;string&apos; and &apos;number&apos; both have &apos;toString&apos;</span><br><span class="line"></span><br><span class="line">x[6] = true; // Error, &apos;boolean&apos; isn&apos;t &apos;string | number&apos;</span><br></pre></td></tr></table></figure>
+<h2 id="Enum"><a href="#Enum" class="headerlink" title="Enum"></a>Enum</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">enum Color &#123;Red, Green, Blue&#125;</span><br><span class="line">let c: Color = Color.Green;</span><br></pre></td></tr></table></figure>
+<p>By default, enums begin numbering their members starting at 0. You can change this by manually setting the value of one of its members. For example, we can start the previous example at 1 instead of 0:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">enum Color &#123;Red = 1, Green, Blue&#125;</span><br><span class="line">let c: Color = Color.Green;</span><br></pre></td></tr></table></figure></p>
+<p>Manually set all the values in the enum:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">enum Color &#123;Red = 1, Green = 2, Blue = 4&#125;</span><br><span class="line">let c: Color = Color.Green;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Any"><a href="#Any" class="headerlink" title="Any"></a>Any</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let notSure: any = 4;</span><br><span class="line">notSure = &quot;maybe a string instead&quot;;</span><br><span class="line">notSure = false; // okay, definitely a boolean</span><br></pre></td></tr></table></figure>
+<p>The any type is a powerful way to work with existing JavaScript, allowing you to gradually opt-in and opt-out of type-checking during compilation. You might expect <code>Object</code> to play a similar role, as it does in other languages. But variables of type Object only allow you to assign any value to them - you can’t call arbitrary methods on them, even ones that actually exist:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let notSure: any = 4;</span><br><span class="line">notSure.ifItExists(); // okay, ifItExists might exist at runtime</span><br><span class="line">notSure.toFixed(); // okay, toFixed exists (but the compiler doesn&apos;t check)</span><br><span class="line"></span><br><span class="line">let prettySure: Object = 4;</span><br><span class="line">prettySure.toFixed(); // Error: Property &apos;toFixed&apos; doesn&apos;t exist on type &apos;Object&apos;.</span><br></pre></td></tr></table></figure></p>
+<p>The any type is also handy if you know some part of the type, but perhaps not all of it. For example, you may have an array but the array has a mix of different types:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let list: any[] = [1, true, &quot;free&quot;];</span><br><span class="line"></span><br><span class="line">list[1] = 100;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Void"><a href="#Void" class="headerlink" title="Void"></a>Void</h2><p><code>void</code> is a little like the opposite of <code>any</code>: the absence of having any type at all. You may commonly see this as the return type of functions that do not return a value:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function warnUser(): void &#123;</span><br><span class="line">    alert(&quot;This is my warning message&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>Declaring variables of type <code>void</code> is not useful</strong> because you can only assign undefined or null to them:</p>
+<p><code>let unusable: void = undefined;</code></p>
+<h2 id="Null-and-Undefined"><a href="#Null-and-Undefined" class="headerlink" title="Null and Undefined"></a>Null and Undefined</h2><p>By default <code>null</code> and <code>undefined</code> are subtypes of all other types. That means you can assign <code>null</code> and <code>undefined</code> to something like <code>number</code>.</p>
+<p>However, when using the <code>--strictNullChecks</code> flag, <code>null</code> and <code>undefined</code> are only assignable to <code>void</code> and their respective types. This helps avoid many common errors. In cases where you want to pass in either a <code>string</code> or <code>null</code> or <code>undefined</code>, you can use the union type <code>string | null | undefined</code>. Once again, more on union types later on.</p>
+<blockquote>
+<p>As a note: we encourage the use of <code>--strictNullChecks</code> when possible, but for the purposes of this handbook, we will assume it is turned off.</p>
+</blockquote>
+<h2 id="Never"><a href="#Never" class="headerlink" title="Never"></a>Never</h2><p>The never type represents the type of values that never occur.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// Function returning never must have unreachable end point</span><br><span class="line">function error(message: string): never &#123;</span><br><span class="line">    throw new Error(message);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Inferred return type is never</span><br><span class="line">function fail() &#123;</span><br><span class="line">    return error(&quot;Something failed&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Function returning never must have unreachable end point</span><br><span class="line">function infiniteLoop(): never &#123;</span><br><span class="line">    while (true) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Type-assertions"><a href="#Type-assertions" class="headerlink" title="Type assertions"></a>Type assertions</h2><p>Type assertions have two forms. </p>
+<ul>
+<li><p>One is the “angle-bracket” syntax:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let someValue: any = &quot;this is a string&quot;;</span><br><span class="line"></span><br><span class="line">let strLength: number = (&lt;string&gt;someValue).length;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>The other is the <code>as</code> -syntax:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let someValue: any = &quot;this is a string&quot;;</span><br><span class="line"></span><br><span class="line">let strLength: number = (someValue as string).length;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>When using TypeScript with <strong>JSX</strong>, only <code>as</code> -style assertions are allowed.</p>
+<h1 id="Variable-Declarations"><a href="#Variable-Declarations" class="headerlink" title="Variable Declarations"></a><a href="http://www.typescriptlang.org/docs/handbook/variable-declarations.html" target="_blank" rel="noopener">Variable Declarations</a></h1><h1 id="Interfaces"><a href="#Interfaces" class="headerlink" title="Interfaces"></a><a href="http://www.typescriptlang.org/docs/handbook/interfaces.html" target="_blank" rel="noopener">Interfaces</a></h1><h1 id="Classes"><a href="#Classes" class="headerlink" title="Classes"></a><a href="http://www.typescriptlang.org/docs/handbook/classes.html" target="_blank" rel="noopener">Classes</a></h1><h1 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a><a href="http://www.typescriptlang.org/docs/handbook/functions.html" target="_blank" rel="noopener">Functions</a></h1><h1 id="Generics"><a href="#Generics" class="headerlink" title="Generics"></a><a href="http://www.typescriptlang.org/docs/handbook/generics.html" target="_blank" rel="noopener">Generics</a></h1><h1 id="Enums"><a href="#Enums" class="headerlink" title="Enums"></a><a href="http://www.typescriptlang.org/docs/handbook/enums.html" target="_blank" rel="noopener">Enums</a></h1><h1 id="Type-Inference"><a href="#Type-Inference" class="headerlink" title="Type Inference"></a><a href="http://www.typescriptlang.org/docs/handbook/type-inference.html" target="_blank" rel="noopener">Type Inference</a></h1><h1 id="Type-Compatibility"><a href="#Type-Compatibility" class="headerlink" title="Type Compatibility"></a><a href="http://www.typescriptlang.org/docs/handbook/type-compatibility.html" target="_blank" rel="noopener">Type Compatibility</a></h1><h1 id="Advanced-Types"><a href="#Advanced-Types" class="headerlink" title="Advanced Types"></a><a href="http://www.typescriptlang.org/docs/handbook/advanced-types.html" target="_blank" rel="noopener">Advanced Types</a></h1><h1 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a><a href="http://www.typescriptlang.org/docs/handbook/symbols.html" target="_blank" rel="noopener">Symbols</a></h1><h1 id="Iterators-and-Generators"><a href="#Iterators-and-Generators" class="headerlink" title="Iterators and Generators"></a><a href="http://www.typescriptlang.org/docs/handbook/iterators-and-generators.html" target="_blank" rel="noopener">Iterators and Generators</a></h1><h1 id="Modules"><a href="#Modules" class="headerlink" title="Modules"></a><a href="http://www.typescriptlang.org/docs/handbook/modules.html" target="_blank" rel="noopener">Modules</a></h1><h1 id="Namespaces"><a href="#Namespaces" class="headerlink" title="Namespaces"></a><a href="http://www.typescriptlang.org/docs/handbook/namespaces.html" target="_blank" rel="noopener">Namespaces</a></h1><h1 id="Namespaces-and-Modules"><a href="#Namespaces-and-Modules" class="headerlink" title="Namespaces and Modules"></a><a href="http://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html" target="_blank" rel="noopener">Namespaces and Modules</a></h1><h1 id="Module-Resolution"><a href="#Module-Resolution" class="headerlink" title="Module Resolution"></a><a href="http://www.typescriptlang.org/docs/handbook/module-resolution.html" target="_blank" rel="noopener">Module Resolution</a></h1><h1 id="Declaration-Merging"><a href="#Declaration-Merging" class="headerlink" title="Declaration Merging"></a><a href="http://www.typescriptlang.org/docs/handbook/declaration-merging.html" target="_blank" rel="noopener">Declaration Merging</a></h1><h1 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a><a href="http://www.typescriptlang.org/docs/handbook/jsx.html" target="_blank" rel="noopener">JSX</a></h1><h1 id="Decorators"><a href="#Decorators" class="headerlink" title="Decorators"></a><a href="http://www.typescriptlang.org/docs/handbook/decorators.html" target="_blank" rel="noopener">Decorators</a></h1><h1 id="Mixins"><a href="#Mixins" class="headerlink" title="Mixins"></a><a href="http://www.typescriptlang.org/docs/handbook/mixins.html" target="_blank" rel="noopener">Mixins</a></h1><h1 id="Triple-Slash-Directives"><a href="#Triple-Slash-Directives" class="headerlink" title="Triple-Slash Directives"></a><a href="http://www.typescriptlang.org/docs/handbook/triple-slash-directives.html" target="_blank" rel="noopener">Triple-Slash Directives</a></h1><h1 id="Type-Checking-JavaScript-Files"><a href="#Type-Checking-JavaScript-Files" class="headerlink" title="Type Checking JavaScript Files"></a><a href="http://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html" target="_blank" rel="noopener">Type Checking JavaScript Files</a></h1>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Franklin Chen WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Franklin Chen Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>Franklin Chen</li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://msftbot.com/2018/04/03/typescript-notes/" title="TypeScript Notes">http://msftbot.com/2018/04/03/typescript-notes/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/TypeScript/" rel="tag"># TypeScript</a>
+          
+            <a href="/tags/TS/" rel="tag"># TS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/27/python-common-lib/" rel="next" title="Python Common Library">
+                <i class="fa fa-chevron-left"></i> Python Common Library
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/22/taylorpicassistant/" rel="prev" title="Taylor艺术馆助手(TaylorPicAssistant)">
+                Taylor艺术馆助手(TaylorPicAssistant) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Franklin Chen</p>
+              <p class="site-description motion-element" itemprop="description">Little drops of water make an ocean</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/Myfreedom614" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://stackoverflow.com/users/5254458" target="_blank" title="StackOverflow"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ref"><span class="nav-number">1.</span> <span class="nav-text">Ref</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-Types"><span class="nav-number">2.</span> <span class="nav-text">Basic Types</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Boolean"><span class="nav-number">2.1.</span> <span class="nav-text">Boolean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number"><span class="nav-number">2.2.</span> <span class="nav-text">Number</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#String"><span class="nav-number">2.3.</span> <span class="nav-text">String</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array"><span class="nav-number">2.4.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tuple"><span class="nav-number">2.5.</span> <span class="nav-text">Tuple</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enum"><span class="nav-number">2.6.</span> <span class="nav-text">Enum</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Any"><span class="nav-number">2.7.</span> <span class="nav-text">Any</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Void"><span class="nav-number">2.8.</span> <span class="nav-text">Void</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Null-and-Undefined"><span class="nav-number">2.9.</span> <span class="nav-text">Null and Undefined</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Never"><span class="nav-number">2.10.</span> <span class="nav-text">Never</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Type-assertions"><span class="nav-number">2.11.</span> <span class="nav-text">Type assertions</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Variable-Declarations"><span class="nav-number">3.</span> <span class="nav-text">Variable Declarations</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Interfaces"><span class="nav-number">4.</span> <span class="nav-text">Interfaces</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Classes"><span class="nav-number">5.</span> <span class="nav-text">Classes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Functions"><span class="nav-number">6.</span> <span class="nav-text">Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Generics"><span class="nav-number">7.</span> <span class="nav-text">Generics</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Enums"><span class="nav-number">8.</span> <span class="nav-text">Enums</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Type-Inference"><span class="nav-number">9.</span> <span class="nav-text">Type Inference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Type-Compatibility"><span class="nav-number">10.</span> <span class="nav-text">Type Compatibility</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Advanced-Types"><span class="nav-number">11.</span> <span class="nav-text">Advanced Types</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Symbols"><span class="nav-number">12.</span> <span class="nav-text">Symbols</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Iterators-and-Generators"><span class="nav-number">13.</span> <span class="nav-text">Iterators and Generators</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Modules"><span class="nav-number">14.</span> <span class="nav-text">Modules</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Namespaces"><span class="nav-number">15.</span> <span class="nav-text">Namespaces</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Namespaces-and-Modules"><span class="nav-number">16.</span> <span class="nav-text">Namespaces and Modules</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Module-Resolution"><span class="nav-number">17.</span> <span class="nav-text">Module Resolution</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Declaration-Merging"><span class="nav-number">18.</span> <span class="nav-text">Declaration Merging</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSX"><span class="nav-number">19.</span> <span class="nav-text">JSX</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Decorators"><span class="nav-number">20.</span> <span class="nav-text">Decorators</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mixins"><span class="nav-number">21.</span> <span class="nav-text">Mixins</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Triple-Slash-Directives"><span class="nav-number">22.</span> <span class="nav-text">Triple-Slash Directives</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Type-Checking-JavaScript-Files"><span class="nav-number">23.</span> <span class="nav-text">Type Checking JavaScript Files</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Franklin Chen</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1272913907&web_id=1272913907" language="JavaScript"></script>
+  </div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.3"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
+
+  
+  
+    
+  
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.3"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#more");
+  
+  </script>
+
+
+</body>
+</html>

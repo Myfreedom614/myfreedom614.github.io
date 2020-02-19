@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png?v=6.0.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png?v=6.0.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png?v=6.0.3">
+
+
+  <link rel="mask-icon" href="/fav/safari-pinned-tab.svg?v=6.0.3" color="#222">
+
+
+  <link rel="manifest" href="/fav/site.webmanifest">
+
+
+  <meta name="msapplication-config" content="/fav/browserconfig.xml" />
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'JH5MLYG5WS',
+      apiKey: '471eeab53866e42e0373905a300e3e9d',
+      indexName: 'hexo_blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Blender,3D,Animation," />
+
+
+<meta name="description" content="Ref: Blender Essential Training The Blender InterfaceNavigating in 3D space   Function ShortCut Keys               Orbit Camera Middle mouse click and drag   Toggle Zoom Ctrl + Middle mouse click and">
+<meta name="keywords" content="Blender,3D,Animation">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blender Learning Notes">
+<meta property="og:url" content="http://msftbot.com/2018/01/31/blender_notes/index.html">
+<meta property="og:site_name" content="Franklin&#39;s Blog">
+<meta property="og:description" content="Ref: Blender Essential Training The Blender InterfaceNavigating in 3D space   Function ShortCut Keys               Orbit Camera Middle mouse click and drag   Toggle Zoom Ctrl + Middle mouse click and">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-05-16-15-08.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-05-15-39-21.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-05-16-19-49.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-05-16-45-49.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-05-17-21-14.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-05-17-22-57.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-05-17-30-18.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-06-16-14-03.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-06-16-24-28.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-06-16-41-32.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-06-16-48-15.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-06-17-03-03.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-07-15-29-32.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-07-17-10-33.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-08-14-25-36.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-08-14-43-20.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-08-14-48-45.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-08-15-11-18.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-08-16-48-07.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-08-17-44-42.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-08-16-54-06.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-09-15-33-43.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-09-15-44-33.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-09-17-44-01.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-12-14-18-50.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-12-14-28-55.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-12-14-46-43.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-12-14-58-28.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-12-15-57-51.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-12-15-59-30.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-12-16-08-12.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-14-17-15.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-13-56-51.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-14-01-44.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-21-13-45-41.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-14-33-28.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-14-40-18.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-14-42-31.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-14-46-48.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-16-45-29.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-17-00-44.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-20-17-39-38.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-21-14-36-26.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-21-14-37-26.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-21-15-10-31.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-21-15-14-14.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-21-15-48-17.png">
+<meta property="og:image" content="http://msftbot.com/img/2018-02-21-15-54-57.png">
+<meta property="og:updated_time" content="2020-02-19T10:43:26.835Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blender Learning Notes">
+<meta name="twitter:description" content="Ref: Blender Essential Training The Blender InterfaceNavigating in 3D space   Function ShortCut Keys               Orbit Camera Middle mouse click and drag   Toggle Zoom Ctrl + Middle mouse click and">
+<meta name="twitter:image" content="http://msftbot.com/img/2018-02-05-16-15-08.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://msftbot.com/2018/01/31/blender_notes/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+  <title>Blender Learning Notes | Franklin's Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31462879-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31462879-2');
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f0bcacb43e4dadb14cb044ab5410cd76";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Franklin's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+  
+  
+  
+    
+      
+    
+    <a href="https://github.com/myfreedom614" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+    
+      </a>
+    
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://msftbot.com/2018/01/31/blender_notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Franklin Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Franklin's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Blender Learning Notes</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T07:08:00+00:00">2018-01-31</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Media/" itemprop="url" rel="index"><span itemprop="name">Media</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Ref: <a href="https://www.lynda.com/Blender-tutorials/Blender-Essential-Training/87088-2.html" target="_blank" rel="noopener">Blender Essential Training</a></p>
+<h1 id="The-Blender-Interface"><a href="#The-Blender-Interface" class="headerlink" title="The Blender Interface"></a>The Blender Interface</h1><h2 id="Navigating-in-3D-space"><a href="#Navigating-in-3D-space" class="headerlink" title="Navigating in 3D space"></a>Navigating in 3D space</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orbit Camera</td>
+<td>Middle mouse click and drag</td>
+</tr>
+<tr>
+<td>Toggle Zoom</td>
+<td><strong>Ctrl</strong> + Middle mouse click and drag</td>
+</tr>
+<tr>
+<td>Toggle Pan</td>
+<td><strong>Shift</strong> + Middle mouse click and drag</td>
+</tr>
+<tr>
+<td>View All/Center Cursor</td>
+<td><strong>Shift</strong> + <strong>C</strong></td>
+</tr>
+<tr>
+<td>View orthographic</td>
+<td><strong>Numpad 5</strong></td>
+</tr>
+<tr>
+<td>Front View</td>
+<td><strong>Numpad 1</strong></td>
+</tr>
+<tr>
+<td>Right View</td>
+<td><strong>Numpad 3</strong></td>
+</tr>
+<tr>
+<td>Top View</td>
+<td><strong>Numpad 7</strong></td>
+</tr>
+<tr>
+<td>Camera View</td>
+<td><strong>Numpad 0</strong></td>
+</tr>
+<tr>
+<td>Toggle Right</td>
+<td><strong>Numpad 6</strong></td>
+</tr>
+<tr>
+<td>Toggle Left</td>
+<td><strong>Numpad 4</strong></td>
+</tr>
+<tr>
+<td>Toggle Up</td>
+<td><strong>Numpad 8</strong></td>
+</tr>
+<tr>
+<td>Toggle Down</td>
+<td><strong>Numpad 2</strong></td>
+</tr>
+<tr>
+<td>Toggle Quad View</td>
+<td><strong>Ctrl</strong> + <strong>Alt</strong> + <strong>Q</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Configuring-user-preferences"><a href="#Configuring-user-preferences" class="headerlink" title="Configuring user preferences"></a>Configuring user preferences</h2><p>File -&gt; User Preferences</p>
+<p><strong>System -&gt; Compute Device</strong>: Change it based on your hardware</p>
+<p>For laptop or you have no numpad, check <strong>Input -&gt; Eumlate Numpad</strong></p>
+<h1 id="Selecting-and-Translating-Objects"><a href="#Selecting-and-Translating-Objects" class="headerlink" title="Selecting and Translating Objects"></a>Selecting and Translating Objects</h1><h2 id="Selecting-objects"><a href="#Selecting-objects" class="headerlink" title="Selecting objects"></a>Selecting objects</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select Model</td>
+<td>Right click</td>
+</tr>
+<tr>
+<td>Select/Deselect All</td>
+<td>Press <strong>A</strong> key</td>
+</tr>
+<tr>
+<td>Border Select</td>
+<td>Press <strong>B</strong> and drag</td>
+</tr>
+<tr>
+<td>Circle Select</td>
+<td>Press <strong>C</strong> and drag, use mouse wheel to adjust radius</td>
+</tr>
+<tr>
+<td>Lasso Select</td>
+<td><strong>Ctrl</strong> + Click and drag</td>
+</tr>
+<tr>
+<td>Inverse Select</td>
+<td><strong>Ctrl</strong> + <strong>I</strong></td>
+</tr>
+<tr>
+<td>Select Pattern</td>
+<td>Bottom Menu -&gt; Select -&gt; Select Pattern</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Moving-objects"><a href="#Moving-objects" class="headerlink" title="Moving objects"></a>Moving objects</h2><p>Constrain to x/y/z axis when moving: press <strong>X/Y/Z</strong> key or using Gizmo</p>
+<p>Also we can change view to constrain to a specific axis, e.g. In Top View, constrain to z axis</p>
+<h2 id="Rotating-objects"><a href="#Rotating-objects" class="headerlink" title="Rotating objects"></a>Rotating objects</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotate</td>
+<td>Press <strong>R</strong> key<br>or using Gizmo: Bottom Menu -&gt; Rotate manipulator</td>
+</tr>
+<tr>
+<td>Constrain to x/y/z axis when rotating</td>
+<td>Press <strong>X/Y/Z</strong> key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Scaling-objects"><a href="#Scaling-objects" class="headerlink" title="Scaling objects"></a>Scaling objects</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scale</td>
+<td>Press <strong>S</strong> key<br>or using Gizmo: Bottom Menu -&gt; Scale manipulator</td>
+</tr>
+<tr>
+<td>Constrain to x/y/z axis when scaling</td>
+<td>Press <strong>X/Y/Z</strong> key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Understanding-transform-oritentation"><a href="#Understanding-transform-oritentation" class="headerlink" title="Understanding transform oritentation"></a>Understanding transform oritentation</h2><table>
+<thead>
+<tr>
+<th>Oritentation</th>
+<th>Meaning     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Global</strong></td>
+<td>The default</td>
+</tr>
+<tr>
+<td><strong>Local</strong></td>
+<td>Aligns to the current slected model</td>
+</tr>
+<tr>
+<td><strong>Gimbal</strong></td>
+<td>Working with bones and that sort of thing</td>
+</tr>
+<tr>
+<td><strong>Normal</strong></td>
+<td>Aligns to the normal directiong of the surface. Mesh Modeling</td>
+</tr>
+<tr>
+<td><strong>View</strong></td>
+<td>Move things square to the camera</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Changing-an-object’s-origin"><a href="#Changing-an-object’s-origin" class="headerlink" title="Changing an object’s origin"></a>Changing an object’s origin</h2><p>Bottom Menu -&gt; Object -&gt; Transform</p>
+<ul>
+<li>Geometry to Origin</li>
+<li>Origin to Geometry: Centers to the object, exact center</li>
+<li>Origin to 3D Cursor</li>
+</ul>
+<h2 id="Selecting-pivot-point"><a href="#Selecting-pivot-point" class="headerlink" title="Selecting pivot point"></a>Selecting pivot point</h2><p>Bottom Menu -&gt; Pivot Point</p>
+<table>
+<thead>
+<tr>
+<th>Way</th>
+<th>Meaning     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bounding Box Center</strong></td>
+<td>Rotate all objects around the center of all objects</td>
+</tr>
+<tr>
+<td><strong>3D Cursor</strong></td>
+<td>Rotate around the 3D cursor</td>
+</tr>
+<tr>
+<td><strong>Individual Origins</strong></td>
+<td>Rotate each object around its individual center point or origin point</td>
+</tr>
+<tr>
+<td><strong>Median Point</strong></td>
+<td>Like Bounding Box Center, but a little more sophisticated than that</td>
+</tr>
+<tr>
+<td><strong>Active Element</strong></td>
+<td>Rotate around the <strong>last</strong> object that you’ve selected.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Using-Snap-to-move-objects-precisely"><a href="#Using-Snap-to-move-objects-precisely" class="headerlink" title="Using Snap to move objects precisely"></a>Using Snap to move objects precisely</h2><p>Enable Snap by clicking <strong>Magnet</strong> icon on the bottom menu</p>
+<p>The additional options:</p>
+<ul>
+<li>Volume</li>
+<li>Face</li>
+<li>Edge</li>
+<li>Vertex</li>
+<li>Increment</li>
+</ul>
+<h1 id="Modeling"><a href="#Modeling" class="headerlink" title="Modeling"></a>Modeling</h1><h2 id="Creating-mesh-primitives"><a href="#Creating-mesh-primitives" class="headerlink" title="Creating mesh primitives"></a>Creating mesh primitives</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle Edit mode</td>
+<td>Press <strong>Tab</strong> key</td>
+</tr>
+<tr>
+<td>Delete Selected</td>
+<td>Press <strong>Delete</strong> key</td>
+</tr>
+<tr>
+<td>Add Mesh Menu</td>
+<td><strong>Shift</strong> + <strong>A</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Selecting-verticles-edges-and-faces"><a href="#Selecting-verticles-edges-and-faces" class="headerlink" title="Selecting verticles, edges, and faces"></a>Selecting verticles, edges, and faces</h2><p>Change select mode: Toggle Edit Mode -&gt; Choose Vertex/Edge/Face select</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle select mode</td>
+<td><strong>Ctrl</strong> + <strong>Tab</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A/B/C/Lasso Select is the same as the one in Object mode</p>
+<h2 id="Editing-mesh-objects"><a href="#Editing-mesh-objects" class="headerlink" title="Editing mesh objects"></a>Editing mesh objects</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle Wireframe/Shaded mode</td>
+<td>Press <strong>Z</strong> key</td>
+</tr>
+<tr>
+<td>X-ray mode</td>
+<td>Ture on “<strong>limit selection to visible</strong>“ (On the right side of Vertex/Edge/Face select)<br><img src="/img/2018-02-05-16-15-08.png" alt=""></td>
+</tr>
+<tr>
+<td>Select More</td>
+<td><strong>Ctrl</strong> + “<strong>Numpad +</strong>“</td>
+</tr>
+<tr>
+<td>Select Less</td>
+<td><strong>Ctrl</strong> + “<strong>Numpad -</strong>“</td>
+</tr>
+<tr>
+<td>Select the whole ring edge</td>
+<td>Win: <strong>Alt</strong> + Right Click<br>Mac: <strong>Opt</strong> + Right Click</td>
+</tr>
+</tbody>
+</table>
+<p>Mesh Tools -&gt; Shrink/Fatten</p>
+<h2 id="Proportional-editing"><a href="#Proportional-editing" class="headerlink" title="Proportional editing"></a>Proportional editing</h2><p>Mesh menu -&gt; Proportional Editing -&gt; Enable/Conneted</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle Proportional Editing</td>
+<td>Press <strong>O</strong> key</td>
+</tr>
+<tr>
+<td>Grab</td>
+<td>Press <strong>G</strong> key</td>
+</tr>
+<tr>
+<td>Confirm Edit</td>
+<td>Click</td>
+</tr>
+<tr>
+<td>Cancel Edit</td>
+<td>Right Click</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Sculpt-mode"><a href="#Sculpt-mode" class="headerlink" title="Sculpt mode"></a>Sculpt mode</h2><p>Sculpt Mode -&gt; Bottom Menu -&gt; Brush -&gt; <strong>Sculpt Tool</strong></p>
+<p>Sculpt Mode -&gt; Bursh</p>
+<p>Notice: <strong>Symmetry / Lock</strong></p>
+<h2 id="Working-with-edges-and-edge-loops"><a href="#Working-with-edges-and-edge-loops" class="headerlink" title="Working with edges and edge loops"></a>Working with edges and edge loops</h2><p>Mesh Tools -&gt; Loop Cut and Slide</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concatenate to the broken edges</td>
+<td>Win: <strong>Shift</strong> + <strong>Alt</strong> + Right Click<br>Mac: <strong>Shift</strong> + <strong>Opt</strong> + Right Click</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Extrusions"><a href="#Extrusions" class="headerlink" title="Extrusions"></a>Extrusions</h2><p>Mesh Tools -&gt; Extrude Region</p>
+<p>Mesh Tools -&gt; Extrude Individual</p>
+<h2 id="Smooth-shading-objects"><a href="#Smooth-shading-objects" class="headerlink" title="Smooth shading objects"></a>Smooth shading objects</h2><p>Object Mode -&gt; Object Tools -&gt; Shading: Smooth/Flat<br>Edit Mode -&gt; Select Faces/Edges/Vertices -&gt; Shadding/UVs Panel(Tab on the left panel)-&gt; Shading</p>
+<h2 id="Subdividing-meshes"><a href="#Subdividing-meshes" class="headerlink" title="Subdividing meshes"></a>Subdividing meshes</h2><p>Edit Mode -&gt; Tools(Tab on the left panel) -&gt; Mesh Tools -&gt; Subdivide</p>
+<h1 id="Advanced-Modeling"><a href="#Advanced-Modeling" class="headerlink" title="Advanced Modeling"></a>Advanced Modeling</h1><h2 id="Working-with-modifiers"><a href="#Working-with-modifiers" class="headerlink" title="Working with modifiers"></a>Working with modifiers</h2><p>Select model -&gt; Right menu bar -&gt; Modifiers</p>
+<h2 id="Working-with-subdivision-surfaces"><a href="#Working-with-subdivision-surfaces" class="headerlink" title="Working with subdivision surfaces"></a>Working with subdivision surfaces</h2><p>Select model -&gt; Right menu bar -&gt; Modifiers -&gt; Subdivision Surface</p>
+<p><img src="/img/2018-02-05-15-39-21.png" alt="Subdivision Surface"></p>
+<h2 id="Creating-a-simple-creature"><a href="#Creating-a-simple-creature" class="headerlink" title="Creating a simple creature"></a>Creating a simple creature</h2><p>Practise</p>
+<h2 id="Symmetrical-modeling-with-the-Mirror-modifier"><a href="#Symmetrical-modeling-with-the-Mirror-modifier" class="headerlink" title="Symmetrical modeling with the Mirror modifier"></a>Symmetrical modeling with the Mirror modifier</h2><p>Select model -&gt; Right menu bar -&gt; Modifiers -&gt; Mirror</p>
+<p><img src="/img/2018-02-05-16-19-49.png" alt="Mirror modifier"></p>
+<h2 id="Joining-mesh-objects"><a href="#Joining-mesh-objects" class="headerlink" title="Joining mesh objects"></a>Joining mesh objects</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Join objects</td>
+<td><strong>Ctrl</strong> + <strong>J</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Stitching-vertices"><a href="#Stitching-vertices" class="headerlink" title="Stitching vertices"></a>Stitching vertices</h2><p>Using Snap(Magnet) to stitch vertices:</p>
+<p><img src="/img/2018-02-05-16-45-49.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle <strong>Vertics</strong> Mesh Menu</td>
+<td><strong>Ctrl</strong> + <strong>V</strong></td>
+</tr>
+<tr>
+<td>Toggle <strong>Edges</strong> Mesh Menu</td>
+<td><strong>Ctrl</strong> + <strong>E</strong></td>
+</tr>
+<tr>
+<td>Toggle <strong>Faces</strong> Mesh Menu</td>
+<td><strong>Ctrl</strong> + <strong>F</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Vertics</strong> Mesh Menu -&gt; Merge / Remove Doubles</p>
+<h2 id="Finalizing-a-simple-creature"><a href="#Finalizing-a-simple-creature" class="headerlink" title="Finalizing a simple creature"></a>Finalizing a simple creature</h2><p>Sculpt Mode -&gt; Brush -&gt; Sculpt Tool -&gt; Smooth</p>
+<h2 id="Creating-text"><a href="#Creating-text" class="headerlink" title="Creating text"></a>Creating text</h2><p>Add Mesh -&gt; Text</p>
+<p>Text Properties:</p>
+<p><img src="/img/2018-02-05-17-21-14.png" alt=""></p>
+<h2 id="Boolean-tools"><a href="#Boolean-tools" class="headerlink" title="Boolean tools"></a>Boolean tools</h2><p>Select model -&gt; Right menu bar -&gt; Modifiers -&gt; Boolean</p>
+<p><img src="/img/2018-02-05-17-22-57.png" alt=""></p>
+<h2 id="Vertex-groups"><a href="#Vertex-groups" class="headerlink" title="Vertex groups"></a>Vertex groups</h2><p>Select model -&gt; Data Properties -&gt; Vertex Groups</p>
+<p><img src="/img/2018-02-05-17-30-18.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle <strong>Vertex Groups</strong> Menu</td>
+<td><strong>Ctrl</strong> + <strong>G</strong></td>
+</tr>
+</tbody>
+</table>
+<h1 id="Staying-Organized"><a href="#Staying-Organized" class="headerlink" title="Staying Organized"></a>Staying Organized</h1><h2 id="Using-the-Outliner"><a href="#Using-the-Outliner" class="headerlink" title="Using the Outliner"></a>Using the Outliner</h2><p><img src="/img/2018-02-06-16-14-03.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expand</td>
+<td><strong>Numpad +</strong></td>
+</tr>
+<tr>
+<td>Collapse</td>
+<td><strong>Numpad -</strong></td>
+</tr>
+<tr>
+<td>Show Hidden Object</td>
+<td><strong>Alt</strong> + <strong>H</strong></td>
+</tr>
+<tr>
+<td>Hide Selected Object</td>
+<td><strong>H</strong></td>
+</tr>
+<tr>
+<td>Hide Unselected Object</td>
+<td><strong>Shift</strong> + <strong>H</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Using-layers"><a href="#Using-layers" class="headerlink" title="Using layers"></a>Using layers</h2><p><img src="/img/2018-02-06-16-24-28.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move to Layer</td>
+<td><strong>M</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Creating-groups"><a href="#Creating-groups" class="headerlink" title="Creating groups"></a>Creating groups</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create new group</td>
+<td><strong>Ctrl</strong> + <strong>G</strong></td>
+</tr>
+<tr>
+<td>Select grouped objects</td>
+<td><strong>Shift</strong> + <strong>G</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Working-with-scenes"><a href="#Working-with-scenes" class="headerlink" title="Working with scenes"></a>Working with scenes</h2><p><img src="/img/2018-02-06-16-41-32.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Render scene</td>
+<td><strong>F12</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Creating-hierarchies"><a href="#Creating-hierarchies" class="headerlink" title="Creating hierarchies"></a>Creating hierarchies</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Make parent<br>(The last selected one)</td>
+<td><strong>Ctrl</strong> + <strong>P</strong></td>
+</tr>
+</tbody>
+</table>
+<p><img src="/img/2018-02-06-16-48-15.png" alt=""></p>
+<h1 id="Applying-Materials"><a href="#Applying-Materials" class="headerlink" title="Applying Materials"></a>Applying Materials</h1><h2 id="Assigning-materials-to-objects"><a href="#Assigning-materials-to-objects" class="headerlink" title="Assigning materials to objects"></a>Assigning materials to objects</h2><p><img src="/img/2018-02-06-17-03-03.png" alt=""></p>
+<h2 id="Diffuse-shaders"><a href="#Diffuse-shaders" class="headerlink" title="Diffuse shaders"></a>Diffuse shaders</h2><p><img src="/img/2018-02-07-15-29-32.png" alt=""></p>
+<ul>
+<li>Lambert</li>
+<li>Oren-Nayar</li>
+<li>Toon</li>
+<li>Minnaert</li>
+<li>Fresnel</li>
+</ul>
+<h2 id="Working-with-specularity"><a href="#Working-with-specularity" class="headerlink" title="Working with specularity"></a>Working with specularity</h2><ul>
+<li>CookTorr</li>
+<li>Phong</li>
+<li>Blinn</li>
+<li>Toon</li>
+<li>Wardlso</li>
+</ul>
+<h2 id="Using-the-Ramp-Shader-options"><a href="#Using-the-Ramp-Shader-options" class="headerlink" title="Using the Ramp Shader options"></a>Using the Ramp Shader options</h2><p>Ramps are basically a gradation of both color and transparency that can really transform the way that your materals look.</p>
+<p><img src="/img/2018-02-07-17-10-33.png" alt=""></p>
+<h2 id="Additional-shading-options"><a href="#Additional-shading-options" class="headerlink" title="Additional shading options"></a>Additional shading options</h2><p><a href="https://docs.blender.org/manual/zh-hans/dev/render/blender_render/materials/properties/shading.html" target="_blank" rel="noopener">Shading docs</a></p>
+<p><img src="/img/2018-02-08-14-25-36.png" alt=""></p>
+<h2 id="Creating-reflections"><a href="#Creating-reflections" class="headerlink" title="Creating reflections"></a>Creating reflections</h2><p><img src="/img/2018-02-08-14-43-20.png" alt=""></p>
+<h2 id="Adding-transparency-and-refractions"><a href="#Adding-transparency-and-refractions" class="headerlink" title="Adding transparency and refractions"></a>Adding transparency and refractions</h2><p><img src="/img/2018-02-08-14-48-45.png" alt=""></p>
+<h2 id="Subsurface-scattering"><a href="#Subsurface-scattering" class="headerlink" title="Subsurface scattering"></a>Subsurface scattering</h2><p>次表面散射 <a href="https://docs.blender.org/manual/en/dev/render/blender_render/materials/properties/subsurface_scattering.html" target="_blank" rel="noopener">Subsurface Scattering docs</a></p>
+<p><img src="/img/2018-02-08-15-11-18.png" alt=""></p>
+<h1 id="Adding-Textures"><a href="#Adding-Textures" class="headerlink" title="Adding Textures"></a>Adding Textures</h1><h2 id="Adding-a-simple-texture"><a href="#Adding-a-simple-texture" class="headerlink" title="Adding a simple texture"></a>Adding a simple texture</h2><p><img src="/img/2018-02-08-16-48-07.png" alt=""></p>
+<h2 id="Using-bitmaps"><a href="#Using-bitmaps" class="headerlink" title="Using bitmaps"></a>Using bitmaps</h2><p><strong>Image or Movie</strong> Type</p>
+<p>Image Mapping -&gt; UV</p>
+<p><img src="/img/2018-02-08-17-44-42.png" alt=""> </p>
+<p>UV Editing:</p>
+<p><img src="/img/2018-02-08-16-54-06.png" alt=""></p>
+<p><strong>Please notice that a material can have multiple textures</strong></p>
+<h2 id="Mapping-textures-in-the-UV-Editor"><a href="#Mapping-textures-in-the-UV-Editor" class="headerlink" title="Mapping textures in the UV Editor"></a>Mapping textures in the UV Editor</h2><p>Mesh menu -&gt; Edges -&gt; <strong>Mark Seam</strong></p>
+<p>Mesh menu -&gt; <strong>UV Unwrap</strong> -&gt; Unwrap:</p>
+<p><img src="/img/2018-02-09-15-33-43.png" alt=""></p>
+<h2 id="Using-UV-projections"><a href="#Using-UV-projections" class="headerlink" title="Using UV projections"></a>Using UV projections</h2><p><img src="/img/2018-02-09-15-44-33.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move projection</td>
+<td><strong>Island</strong> mode, right click<br><img src="/img/2018-02-09-17-44-01.png" alt=""><br> Or Press <strong>G</strong></td>
+</tr>
+<tr>
+<td>Scale projection</td>
+<td><strong>S</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="UV-mapping-a-character"><a href="#UV-mapping-a-character" class="headerlink" title="UV mapping a character"></a>UV mapping a character</h2><p>Practise</p>
+<p><strong>Projected mapping is view dependent</strong></p>
+<h2 id="Fine-tuning-UV-mapping"><a href="#Fine-tuning-UV-mapping" class="headerlink" title="Fine-tuning UV mapping"></a>Fine-tuning UV mapping</h2><h2 id="Creating-Bump-and-Normal-maps"><a href="#Creating-Bump-and-Normal-maps" class="headerlink" title="Creating Bump and Normal maps"></a>Creating Bump and Normal maps</h2><p>Texture -&gt; Infulence -&gt; Geometry</p>
+<p>With bump mapping, just remember that the light colors are what’s creating the bumps. Dark colors create no bumps.</p>
+<h2 id="Displacement-mapping"><a href="#Displacement-mapping" class="headerlink" title="Displacement mapping"></a>Displacement mapping</h2><p>Texture -&gt; Infulence -&gt; Displace</p>
+<p>Bump mapping is a surface effect; It <strong>does not</strong> change the underlying geomerty. Displacement mapping, however, does, although you do need enough geometry to displace. With <strong>Subdivision surfaces</strong> Modifier’s help, we can easily add more geometry without too much overload.</p>
+<h2 id="Using-the-node-editor"><a href="#Using-the-node-editor" class="headerlink" title="Using the node editor"></a>Using the node editor</h2><p>Allow us to connect multiple textures together into a network of nodes that create more complex textures.</p>
+<p><img src="/img/2018-02-12-14-18-50.png" alt=""></p>
+<h1 id="Working-with-Light"><a href="#Working-with-Light" class="headerlink" title="Working with Light"></a>Working with Light</h1><h2 id="Adding-lamps-to-a-scene"><a href="#Adding-lamps-to-a-scene" class="headerlink" title="Adding lamps to a scene"></a>Adding lamps to a scene</h2><p><img src="/img/2018-02-12-14-28-55.png" alt=""></p>
+<h2 id="Fine-tuning-ray-trace-shadows"><a href="#Fine-tuning-ray-trace-shadows" class="headerlink" title="Fine-tuning ray-trace shadows"></a>Fine-tuning ray-trace shadows</h2><p>Ray Shadow</p>
+<h2 id="Using-spot-lamps"><a href="#Using-spot-lamps" class="headerlink" title="Using spot lamps"></a>Using spot lamps</h2><p><img src="/img/2018-02-12-14-46-43.png" alt=""></p>
+<h2 id="Fine-tuning-buffer-shadows"><a href="#Fine-tuning-buffer-shadows" class="headerlink" title="Fine-tuning buffer shadows"></a>Fine-tuning buffer shadows</h2><p><img src="/img/2018-02-12-14-58-28.png" alt=""></p>
+<p>Buffer shadows are based on a bitmap, which means they render faster, particularly for soft shadows.</p>
+<h2 id="Using-Hemi-lamps"><a href="#Using-Hemi-lamps" class="headerlink" title="Using Hemi lamps"></a>Using Hemi lamps</h2><p>No position for source, just control the direction</p>
+<h2 id="Working-with-Area-lamps"><a href="#Working-with-Area-lamps" class="headerlink" title="Working with Area lamps"></a>Working with Area lamps</h2><p>From a specific region, rather than a point or a source.</p>
+<h2 id="Creating-sky-and-ambient-light"><a href="#Creating-sky-and-ambient-light" class="headerlink" title="Creating sky and ambient light"></a>Creating sky and ambient light</h2><p><a href="https://docs.blender.org/manual/zh-hans/dev/render/blender_render/world/world_panel.html" target="_blank" rel="noopener">World panel</a></p>
+<h2 id="Adding-background-images"><a href="#Adding-background-images" class="headerlink" title="Adding background images"></a>Adding background images</h2><p>Texture -&gt; Image -&gt; Influence</p>
+<h2 id="Creating-sunlight"><a href="#Creating-sunlight" class="headerlink" title="Creating sunlight"></a>Creating sunlight</h2><p>Basically works the same as the <strong>Hemi lamp</strong>, in that it is <strong>directional and not positional</strong>. On of differences between them, <strong>the Sun lamp can do shadows</strong>. </p>
+<h2 id="Ambient-occlusion"><a href="#Ambient-occlusion" class="headerlink" title="Ambient occlusion"></a>Ambient occlusion</h2><p>环境光遮蔽</p>
+<p><img src="/img/2018-02-12-15-57-51.png" alt=""></p>
+<p><img src="/img/2018-02-12-15-59-30.png" alt=""></p>
+<p>Ambient occlusion creates an overall ambient lighting, and we have two forms: we have ambient occlusion, which is just a <strong>simple</strong> color or if we want to have more <strong>complex</strong> lighting, w can use <strong>Environment Lighting</strong>.</p>
+<p><img src="/img/2018-02-12-16-08-12.png" alt=""></p>
+<h1 id="Cameras-and-Rendering"><a href="#Cameras-and-Rendering" class="headerlink" title="Cameras and Rendering"></a>Cameras and Rendering</h1><h2 id="Working-with-cameras"><a href="#Working-with-cameras" class="headerlink" title="Working with cameras"></a>Working with cameras</h2><p><img src="/img/2018-02-20-14-17-15.png" alt=""></p>
+<p><img src="/img/2018-02-20-13-56-51.png" alt=""></p>
+<h2 id="Creating-camera-targets-with-constraints"><a href="#Creating-camera-targets-with-constraints" class="headerlink" title="Creating camera targets with constraints"></a>Creating camera targets with constraints</h2><p>Constraints -&gt; Add Object Constraints -&gt; <strong>Damped Track</strong></p>
+<p><img src="/img/2018-02-20-14-01-44.png" alt=""></p>
+<p>Add empty object(<strong>Object Mode</strong>, Add -&gt; Empty -&gt; <strong>Plain Axes</strong>) as target obj:</p>
+<p><img src="/img/2018-02-21-13-45-41.png" alt=""></p>
+<h2 id="Render-properties"><a href="#Render-properties" class="headerlink" title="Render properties"></a>Render properties</h2><ul>
+<li>Display</li>
+<li>Dimensions</li>
+<li>Anti-Aliasing</li>
+<li>Shading</li>
+<li>Performance</li>
+<li>Output</li>
+</ul>
+<h2 id="Rendering-animation"><a href="#Rendering-animation" class="headerlink" title="Rendering animation"></a>Rendering animation</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Render Animation</td>
+<td><strong>Ctrl</strong> + <strong>F12</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Adding-motion-blur"><a href="#Adding-motion-blur" class="headerlink" title="Adding motion blur"></a>Adding motion blur</h2><p><img src="/img/2018-02-20-14-33-28.png" alt=""></p>
+<h2 id="Creating-depth-of-field"><a href="#Creating-depth-of-field" class="headerlink" title="Creating depth of field"></a>Creating depth of field</h2><p>Camera-focus effect</p>
+<p><img src="/img/2018-02-20-14-40-18.png" alt=""></p>
+<p>+</p>
+<p>Defocus filter Node</p>
+<p><img src="/img/2018-02-20-14-42-31.png" alt=""></p>
+<p><img src="/img/2018-02-20-14-46-48.png" alt=""></p>
+<p>F-stop: lower, the more depth of field we get<br>Threshold: The width of focal area</p>
+<h1 id="Basic-Animation"><a href="#Basic-Animation" class="headerlink" title="Basic Animation"></a>Basic Animation</h1><h2 id="Understanding-the-Timeline"><a href="#Understanding-the-Timeline" class="headerlink" title="Understanding the Timeline"></a>Understanding the Timeline</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zoom Timeline</td>
+<td><strong>Scroll Middle Mouse Button</strong><br><strong>Ctrl</strong> + <strong>Middle Mouse Button</strong> + <strong>Drag</strong></td>
+</tr>
+<tr>
+<td>Pan Timeline</td>
+<td><strong>Shift(Optional)</strong> + <strong>Middle Mouse Button</strong> + <strong>Drag</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Animating-objects"><a href="#Animating-objects" class="headerlink" title="Animating objects"></a>Animating objects</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Insert keyframes</td>
+<td><strong>Hover over</strong> the property and Press <strong>i</strong> key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Animating-properties"><a href="#Animating-properties" class="headerlink" title="Animating properties"></a>Animating properties</h2><h2 id="Editing-animation-in-the-Graph-Editor"><a href="#Editing-animation-in-the-Graph-Editor" class="headerlink" title="Editing animation in the Graph Editor"></a>Editing animation in the Graph Editor</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interpolation mode</td>
+<td>Press <strong>T</strong> key in Graph Editor </td>
+</tr>
+</tbody>
+</table>
+<h2 id="Using-the-Dope-Sheet"><a href="#Using-the-Dope-Sheet" class="headerlink" title="Using the Dope Sheet"></a>Using the Dope Sheet</h2><p>动画摄影表</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mode keyframe</td>
+<td>Right click and drag </td>
+</tr>
+</tbody>
+</table>
+<h2 id="Path-animation"><a href="#Path-animation" class="headerlink" title="Path animation"></a>Path animation</h2><p>Add -&gt; Curve -&gt; Path</p>
+<p>Constraint -&gt; Clamp to</p>
+<p><img src="/img/2018-02-20-16-45-29.png" alt=""></p>
+<h1 id="Character-Rigging"><a href="#Character-Rigging" class="headerlink" title="Character Rigging"></a>Character Rigging</h1><h2 id="Facial-animation-using-shape-keys"><a href="#Facial-animation-using-shape-keys" class="headerlink" title="Facial animation using shape keys"></a>Facial animation using shape keys</h2><p>Add shape key and edit model in the Editor mode</p>
+<p><img src="/img/2018-02-20-17-00-44.png" alt=""></p>
+<h2 id="Understanding-armatures"><a href="#Understanding-armatures" class="headerlink" title="Understanding armatures"></a>Understanding armatures</h2><p>Pose Mode: For animation<br>Edit Mode: Edit bones</p>
+<h2 id="Fitting-an-armature-to-a-creature"><a href="#Fitting-an-armature-to-a-creature" class="headerlink" title="Fitting an armature to a creature"></a>Fitting an armature to a creature</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rename Bones</td>
+<td><strong>Ctrl</strong> + <strong>Click</strong></td>
+</tr>
+<tr>
+<td>Extrude Bone’s model</td>
+<td>Press <strong>E</strong> key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Deforming-a-character-with-an-armature"><a href="#Deforming-a-character-with-an-armature" class="headerlink" title="Deforming a character with an armature"></a>Deforming a character with an armature</h2><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>ShortCut Keys          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rename Bones</td>
+<td><strong>Select Mesh and then select armature</strong>, <strong>Ctrl</strong> + <strong>P</strong><br><img src="/img/2018-02-20-17-39-38.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>Pose Mode, Solid mode &amp; X-Ray(Display), rotate the bone</p>
+<p>Lock down some properties in Transform panel as you wish</p>
+<h2 id="Setting-up-inverse-kinematics"><a href="#Setting-up-inverse-kinematics" class="headerlink" title="Setting up inverse kinematics"></a>Setting up inverse kinematics</h2><p>Pose Mode -&gt; Bone Constraints -&gt; Inverse Kinematics:</p>
+<p><a href="https://docs.blender.org/manual/en/dev/rigging/armatures/posing/bone_constraints/inverse_kinematics/introduction.html" target="_blank" rel="noopener">Docs</a></p>
+<h2 id="Controlling-the-hips-and-body"><a href="#Controlling-the-hips-and-body" class="headerlink" title="Controlling the hips and body"></a>Controlling the hips and body</h2><p>Add a circle curve as parent of bones</p>
+<h2 id="Animating-in-Pose-mode"><a href="#Animating-in-Pose-mode" class="headerlink" title="Animating in Pose mode"></a>Animating in Pose mode</h2><p>Insert Keyframes</p>
+<h2 id="Creating-a-test-animation"><a href="#Creating-a-test-animation" class="headerlink" title="Creating a test animation"></a>Creating a test animation</h2><p>Keyframes + Shape keys</p>
+<h1 id="Rendering-in-Cycles"><a href="#Rendering-in-Cycles" class="headerlink" title="Rendering in Cycles"></a>Rendering in Cycles</h1><h2 id="Interactive-rendering-in-cycles"><a href="#Interactive-rendering-in-cycles" class="headerlink" title="Interactive rendering in cycles"></a>Interactive rendering in cycles</h2><p>Cycles Render</p>
+<p><img src="/img/2018-02-21-14-36-26.png" alt=""><br><img src="/img/2018-02-21-14-37-26.png" alt=""></p>
+<h2 id="Render-settings-for-cycles"><a href="#Render-settings-for-cycles" class="headerlink" title="Render settings for cycles"></a>Render settings for cycles</h2><ul>
+<li>Render</li>
+<li>Dimensions</li>
+<li>Metadata</li>
+<li>Output</li>
+<li>Sampling</li>
+<li>Light Paths</li>
+<li>Performance</li>
+</ul>
+<h2 id="Create-basic-materials-in-cycles"><a href="#Create-basic-materials-in-cycles" class="headerlink" title="Create basic materials in cycles"></a>Create basic materials in cycles</h2><h2 id="Using-the-Node-Editor-to-refine-materials"><a href="#Using-the-Node-Editor-to-refine-materials" class="headerlink" title="Using the Node Editor to refine materials"></a>Using the Node Editor to refine materials</h2><p>Mix Shader</p>
+<p><img src="/img/2018-02-21-15-10-31.png" alt=""></p>
+<h2 id="Working-with-image-maps"><a href="#Working-with-image-maps" class="headerlink" title="Working with image maps"></a>Working with image maps</h2><p><img src="/img/2018-02-21-15-14-14.png" alt=""></p>
+<h2 id="Create-bumps-and-deplacemenets"><a href="#Create-bumps-and-deplacemenets" class="headerlink" title="Create bumps and deplacemenets"></a>Create bumps and deplacemenets</h2><p>Material -&gt; Displacement -&gt; Voronoi Texture (泰森多边形材质)</p>
+<p>Use Bright/Contrast node to adjust contrast</p>
+<h2 id="Create-lights-in-cycles"><a href="#Create-lights-in-cycles" class="headerlink" title="Create lights in cycles"></a>Create lights in cycles</h2><h2 id="Working-wih-ambient-occlusion-in-cycles"><a href="#Working-wih-ambient-occlusion-in-cycles" class="headerlink" title="Working wih ambient occlusion in cycles"></a>Working wih ambient occlusion in cycles</h2><h2 id="Create-object-based-lighting-in-cycles"><a href="#Create-object-based-lighting-in-cycles" class="headerlink" title="Create object-based lighting in cycles"></a>Create object-based lighting in cycles</h2><p>Emission Surface in material</p>
+<p><img src="/img/2018-02-21-15-48-17.png" alt=""></p>
+<h2 id="Image-based-lighting-in-cycles"><a href="#Image-based-lighting-in-cycles" class="headerlink" title="Image-based lighting in cycles"></a>Image-based lighting in cycles</h2><p>hdr image</p>
+<h2 id="Using-environment-lighting-in-cycles"><a href="#Using-environment-lighting-in-cycles" class="headerlink" title="Using environment lighting in cycles"></a>Using environment lighting in cycles</h2><p>World -&gt; Surface: Background -&gt; Color: Environment Texture</p>
+<p><img src="/img/2018-02-21-15-54-57.png" alt=""></p>
+<h2 id="Lighting-a-scene-in-cycles"><a href="#Lighting-a-scene-in-cycles" class="headerlink" title="Lighting a scene in cycles"></a>Lighting a scene in cycles</h2><p>Instead of using Background shader on surface, use Bright/Contrast shader with Environment Texture</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Franklin Chen WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Franklin Chen Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>Franklin Chen</li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://msftbot.com/2018/01/31/blender_notes/" title="Blender Learning Notes">http://msftbot.com/2018/01/31/blender_notes/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Blender/" rel="tag"># Blender</a>
+          
+            <a href="/tags/3D/" rel="tag"># 3D</a>
+          
+            <a href="/tags/Animation/" rel="tag"># Animation</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/30/compression_decompression_linux/" rel="next" title="Compression & Decompression on Linux">
+                <i class="fa fa-chevron-left"></i> Compression & Decompression on Linux
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/27/python-common-lib/" rel="prev" title="Python Common Library">
+                Python Common Library <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Franklin Chen</p>
+              <p class="site-description motion-element" itemprop="description">Little drops of water make an ocean</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/Myfreedom614" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://stackoverflow.com/users/5254458" target="_blank" title="StackOverflow"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#The-Blender-Interface"><span class="nav-number">1.</span> <span class="nav-text">The Blender Interface</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Navigating-in-3D-space"><span class="nav-number">1.1.</span> <span class="nav-text">Navigating in 3D space</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Configuring-user-preferences"><span class="nav-number">1.2.</span> <span class="nav-text">Configuring user preferences</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Selecting-and-Translating-Objects"><span class="nav-number">2.</span> <span class="nav-text">Selecting and Translating Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Selecting-objects"><span class="nav-number">2.1.</span> <span class="nav-text">Selecting objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Moving-objects"><span class="nav-number">2.2.</span> <span class="nav-text">Moving objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rotating-objects"><span class="nav-number">2.3.</span> <span class="nav-text">Rotating objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scaling-objects"><span class="nav-number">2.4.</span> <span class="nav-text">Scaling objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Understanding-transform-oritentation"><span class="nav-number">2.5.</span> <span class="nav-text">Understanding transform oritentation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Changing-an-object’s-origin"><span class="nav-number">2.6.</span> <span class="nav-text">Changing an object’s origin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Selecting-pivot-point"><span class="nav-number">2.7.</span> <span class="nav-text">Selecting pivot point</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-Snap-to-move-objects-precisely"><span class="nav-number">2.8.</span> <span class="nav-text">Using Snap to move objects precisely</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Modeling"><span class="nav-number">3.</span> <span class="nav-text">Modeling</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-mesh-primitives"><span class="nav-number">3.1.</span> <span class="nav-text">Creating mesh primitives</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Selecting-verticles-edges-and-faces"><span class="nav-number">3.2.</span> <span class="nav-text">Selecting verticles, edges, and faces</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Editing-mesh-objects"><span class="nav-number">3.3.</span> <span class="nav-text">Editing mesh objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Proportional-editing"><span class="nav-number">3.4.</span> <span class="nav-text">Proportional editing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sculpt-mode"><span class="nav-number">3.5.</span> <span class="nav-text">Sculpt mode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-edges-and-edge-loops"><span class="nav-number">3.6.</span> <span class="nav-text">Working with edges and edge loops</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Extrusions"><span class="nav-number">3.7.</span> <span class="nav-text">Extrusions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Smooth-shading-objects"><span class="nav-number">3.8.</span> <span class="nav-text">Smooth shading objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Subdividing-meshes"><span class="nav-number">3.9.</span> <span class="nav-text">Subdividing meshes</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Advanced-Modeling"><span class="nav-number">4.</span> <span class="nav-text">Advanced Modeling</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-modifiers"><span class="nav-number">4.1.</span> <span class="nav-text">Working with modifiers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-subdivision-surfaces"><span class="nav-number">4.2.</span> <span class="nav-text">Working with subdivision surfaces</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-a-simple-creature"><span class="nav-number">4.3.</span> <span class="nav-text">Creating a simple creature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Symmetrical-modeling-with-the-Mirror-modifier"><span class="nav-number">4.4.</span> <span class="nav-text">Symmetrical modeling with the Mirror modifier</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Joining-mesh-objects"><span class="nav-number">4.5.</span> <span class="nav-text">Joining mesh objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Stitching-vertices"><span class="nav-number">4.6.</span> <span class="nav-text">Stitching vertices</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finalizing-a-simple-creature"><span class="nav-number">4.7.</span> <span class="nav-text">Finalizing a simple creature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-text"><span class="nav-number">4.8.</span> <span class="nav-text">Creating text</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Boolean-tools"><span class="nav-number">4.9.</span> <span class="nav-text">Boolean tools</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vertex-groups"><span class="nav-number">4.10.</span> <span class="nav-text">Vertex groups</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Staying-Organized"><span class="nav-number">5.</span> <span class="nav-text">Staying Organized</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-the-Outliner"><span class="nav-number">5.1.</span> <span class="nav-text">Using the Outliner</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-layers"><span class="nav-number">5.2.</span> <span class="nav-text">Using layers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-groups"><span class="nav-number">5.3.</span> <span class="nav-text">Creating groups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-scenes"><span class="nav-number">5.4.</span> <span class="nav-text">Working with scenes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-hierarchies"><span class="nav-number">5.5.</span> <span class="nav-text">Creating hierarchies</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Applying-Materials"><span class="nav-number">6.</span> <span class="nav-text">Applying Materials</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Assigning-materials-to-objects"><span class="nav-number">6.1.</span> <span class="nav-text">Assigning materials to objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Diffuse-shaders"><span class="nav-number">6.2.</span> <span class="nav-text">Diffuse shaders</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-specularity"><span class="nav-number">6.3.</span> <span class="nav-text">Working with specularity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-the-Ramp-Shader-options"><span class="nav-number">6.4.</span> <span class="nav-text">Using the Ramp Shader options</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Additional-shading-options"><span class="nav-number">6.5.</span> <span class="nav-text">Additional shading options</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-reflections"><span class="nav-number">6.6.</span> <span class="nav-text">Creating reflections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Adding-transparency-and-refractions"><span class="nav-number">6.7.</span> <span class="nav-text">Adding transparency and refractions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Subsurface-scattering"><span class="nav-number">6.8.</span> <span class="nav-text">Subsurface scattering</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Adding-Textures"><span class="nav-number">7.</span> <span class="nav-text">Adding Textures</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Adding-a-simple-texture"><span class="nav-number">7.1.</span> <span class="nav-text">Adding a simple texture</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-bitmaps"><span class="nav-number">7.2.</span> <span class="nav-text">Using bitmaps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mapping-textures-in-the-UV-Editor"><span class="nav-number">7.3.</span> <span class="nav-text">Mapping textures in the UV Editor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-UV-projections"><span class="nav-number">7.4.</span> <span class="nav-text">Using UV projections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UV-mapping-a-character"><span class="nav-number">7.5.</span> <span class="nav-text">UV mapping a character</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fine-tuning-UV-mapping"><span class="nav-number">7.6.</span> <span class="nav-text">Fine-tuning UV mapping</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-Bump-and-Normal-maps"><span class="nav-number">7.7.</span> <span class="nav-text">Creating Bump and Normal maps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Displacement-mapping"><span class="nav-number">7.8.</span> <span class="nav-text">Displacement mapping</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-the-node-editor"><span class="nav-number">7.9.</span> <span class="nav-text">Using the node editor</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Working-with-Light"><span class="nav-number">8.</span> <span class="nav-text">Working with Light</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Adding-lamps-to-a-scene"><span class="nav-number">8.1.</span> <span class="nav-text">Adding lamps to a scene</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fine-tuning-ray-trace-shadows"><span class="nav-number">8.2.</span> <span class="nav-text">Fine-tuning ray-trace shadows</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-spot-lamps"><span class="nav-number">8.3.</span> <span class="nav-text">Using spot lamps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fine-tuning-buffer-shadows"><span class="nav-number">8.4.</span> <span class="nav-text">Fine-tuning buffer shadows</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-Hemi-lamps"><span class="nav-number">8.5.</span> <span class="nav-text">Using Hemi lamps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-Area-lamps"><span class="nav-number">8.6.</span> <span class="nav-text">Working with Area lamps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-sky-and-ambient-light"><span class="nav-number">8.7.</span> <span class="nav-text">Creating sky and ambient light</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Adding-background-images"><span class="nav-number">8.8.</span> <span class="nav-text">Adding background images</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-sunlight"><span class="nav-number">8.9.</span> <span class="nav-text">Creating sunlight</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ambient-occlusion"><span class="nav-number">8.10.</span> <span class="nav-text">Ambient occlusion</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cameras-and-Rendering"><span class="nav-number">9.</span> <span class="nav-text">Cameras and Rendering</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-cameras"><span class="nav-number">9.1.</span> <span class="nav-text">Working with cameras</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-camera-targets-with-constraints"><span class="nav-number">9.2.</span> <span class="nav-text">Creating camera targets with constraints</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Render-properties"><span class="nav-number">9.3.</span> <span class="nav-text">Render properties</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rendering-animation"><span class="nav-number">9.4.</span> <span class="nav-text">Rendering animation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Adding-motion-blur"><span class="nav-number">9.5.</span> <span class="nav-text">Adding motion blur</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-depth-of-field"><span class="nav-number">9.6.</span> <span class="nav-text">Creating depth of field</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-Animation"><span class="nav-number">10.</span> <span class="nav-text">Basic Animation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Understanding-the-Timeline"><span class="nav-number">10.1.</span> <span class="nav-text">Understanding the Timeline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Animating-objects"><span class="nav-number">10.2.</span> <span class="nav-text">Animating objects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Animating-properties"><span class="nav-number">10.3.</span> <span class="nav-text">Animating properties</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Editing-animation-in-the-Graph-Editor"><span class="nav-number">10.4.</span> <span class="nav-text">Editing animation in the Graph Editor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-the-Dope-Sheet"><span class="nav-number">10.5.</span> <span class="nav-text">Using the Dope Sheet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Path-animation"><span class="nav-number">10.6.</span> <span class="nav-text">Path animation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Character-Rigging"><span class="nav-number">11.</span> <span class="nav-text">Character Rigging</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Facial-animation-using-shape-keys"><span class="nav-number">11.1.</span> <span class="nav-text">Facial animation using shape keys</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Understanding-armatures"><span class="nav-number">11.2.</span> <span class="nav-text">Understanding armatures</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fitting-an-armature-to-a-creature"><span class="nav-number">11.3.</span> <span class="nav-text">Fitting an armature to a creature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deforming-a-character-with-an-armature"><span class="nav-number">11.4.</span> <span class="nav-text">Deforming a character with an armature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setting-up-inverse-kinematics"><span class="nav-number">11.5.</span> <span class="nav-text">Setting up inverse kinematics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Controlling-the-hips-and-body"><span class="nav-number">11.6.</span> <span class="nav-text">Controlling the hips and body</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Animating-in-Pose-mode"><span class="nav-number">11.7.</span> <span class="nav-text">Animating in Pose mode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Creating-a-test-animation"><span class="nav-number">11.8.</span> <span class="nav-text">Creating a test animation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Rendering-in-Cycles"><span class="nav-number">12.</span> <span class="nav-text">Rendering in Cycles</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Interactive-rendering-in-cycles"><span class="nav-number">12.1.</span> <span class="nav-text">Interactive rendering in cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Render-settings-for-cycles"><span class="nav-number">12.2.</span> <span class="nav-text">Render settings for cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-basic-materials-in-cycles"><span class="nav-number">12.3.</span> <span class="nav-text">Create basic materials in cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-the-Node-Editor-to-refine-materials"><span class="nav-number">12.4.</span> <span class="nav-text">Using the Node Editor to refine materials</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-with-image-maps"><span class="nav-number">12.5.</span> <span class="nav-text">Working with image maps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-bumps-and-deplacemenets"><span class="nav-number">12.6.</span> <span class="nav-text">Create bumps and deplacemenets</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-lights-in-cycles"><span class="nav-number">12.7.</span> <span class="nav-text">Create lights in cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Working-wih-ambient-occlusion-in-cycles"><span class="nav-number">12.8.</span> <span class="nav-text">Working wih ambient occlusion in cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-object-based-lighting-in-cycles"><span class="nav-number">12.9.</span> <span class="nav-text">Create object-based lighting in cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-based-lighting-in-cycles"><span class="nav-number">12.10.</span> <span class="nav-text">Image-based lighting in cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-environment-lighting-in-cycles"><span class="nav-number">12.11.</span> <span class="nav-text">Using environment lighting in cycles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lighting-a-scene-in-cycles"><span class="nav-number">12.12.</span> <span class="nav-text">Lighting a scene in cycles</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Franklin Chen</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1272913907&web_id=1272913907" language="JavaScript"></script>
+  </div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.3"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
+
+  
+  
+    
+  
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.0.3"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#more");
+  
+  </script>
+
+
+</body>
+</html>
