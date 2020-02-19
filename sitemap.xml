@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
+    
+    <lastmod>2020-02-19T10:52:28.486Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://msftbot.com/tags/index.html</loc>
     
     <lastmod>2020-02-19T10:43:27.023Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://msftbot.com/taylorpicassistant/index.html</loc>
     
     <lastmod>2020-02-19T10:43:27.023Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
-    
-    <lastmod>2020-02-19T10:43:26.847Z</lastmod>
     
   </url>
   
@@ -37,14 +37,14 @@
   </url>
   
   <url>
-    <loc>http://msftbot.com/categories/index.html</loc>
+    <loc>http://msftbot.com/about/index.html</loc>
     
     <lastmod>2020-02-19T10:43:26.847Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://msftbot.com/about/index.html</loc>
+    <loc>http://msftbot.com/categories/index.html</loc>
     
     <lastmod>2020-02-19T10:43:26.847Z</lastmod>
     
@@ -79,13 +79,6 @@
   </url>
   
   <url>
-    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
-    
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://msftbot.com/2017/12/03/final-cut-pro-x-learning-notes-md/</loc>
     
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
@@ -94,6 +87,13 @@
   
   <url>
     <loc>http://msftbot.com/2018/01/30/hexo_installation/</loc>
+    
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
     
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     

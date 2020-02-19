@@ -3,11 +3,9 @@
 
 
     
-    
-    
   <url>
     <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
-    <lastmod>2020-02-19T10:43:26.847Z</lastmod>
+    <lastmod>2020-02-19T10:52:28.486Z</lastmod>
     <data>
         <display>
         <title>Taylor艺术馆助手(TaylorPicAssistant)</title>
@@ -26,6 +24,8 @@
     </data>
     </url>
 
+    
+    
     
   <url>
     <loc>http://msftbot.com/2018/04/03/typescript-notes/</loc>
@@ -170,26 +170,6 @@
 
     
   <url>
-    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>Python Common Library</title>
-        <pubTime>2018-02-27T00:26:26.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://msftbot.com/2017/12/03/final-cut-pro-x-learning-notes-md/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
@@ -227,6 +207,26 @@
            
              
               <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>Python Common Library</title>
+        <pubTime>2018-02-27T00:26:26.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
           
         </display>
     </data>
