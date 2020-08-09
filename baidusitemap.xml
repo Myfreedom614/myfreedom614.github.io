@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
     <lastmod>2020-02-19T10:52:28.486Z</lastmod>
@@ -26,6 +27,27 @@
 
     
     
+  <url>
+    <loc>http://msftbot.com/2017/11/09/setting-shadowsocks-server/</loc>
+    <lastmod>2020-02-19T10:43:26.847Z</lastmod>
+    <data>
+        <display>
+        <title>Setting Shadowsocks Server</title>
+        <pubTime>2017-11-09T23:38:58.000Z</pubTime>
+        
+        <tag>Shadowsocks</tag>
+         
+        <tag>Ubutnu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://msftbot.com/2018/04/03/typescript-notes/</loc>
@@ -43,28 +65,6 @@
            
              
               <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://msftbot.com/2017/11/09/setting-shadowsocks-server/</loc>
-    <lastmod>2020-02-19T10:43:26.847Z</lastmod>
-    <data>
-        <display>
-        <title>Setting Shadowsocks Server</title>
-        <pubTime>2017-11-09T23:38:58.000Z</pubTime>
-        
-        <tag>Shadowsocks</tag>
-         
-        <tag>Ubutnu</tag>
-         
-         
-           
-             
-              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
           
         </display>
     </data>
@@ -190,6 +190,26 @@
 
     
   <url>
+    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>Python Common Library</title>
+        <pubTime>2018-02-27T00:26:26.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://msftbot.com/2018/01/30/hexo_installation/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
@@ -207,26 +227,6 @@
            
              
               <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>Python Common Library</title>
-        <pubTime>2018-02-27T00:26:26.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
           
         </display>
     </data>
