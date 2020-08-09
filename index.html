@@ -442,7 +442,7 @@
             <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a><strong>介绍</strong></h1><p><a href="http://franklin614.com/taylorpicassistant" title="软件主页" target="_blank" rel="noopener"><strong>Taylor艺术馆助手</strong></a>(TaylorPicAssistant) 可以批量抓取下载Taylor艺术馆(<a href="http://www.taylorpictures.net" target="_blank" rel="noopener">http://www.taylorpictures.net</a>)相册，可以选择原图和缩略图模式。</p>
 <p><img src="/img/2018-02-23-15-36-00.png" alt=""></p>
 <p>软件需要 <strong>.NET Framework 4.5</strong> 组件: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653" target="_blank" rel="noopener">下载安装</a></p>
-<h1 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a><strong>软件下载</strong></h1><p>[3/19/2018] 采用 Azure Blob 共享<br><a href="https://franklininternals1397.blob.core.windows.net/test/TaylorPicAssistantV2.2.zip" target="_blank" rel="noopener">点击下载</a></p>
+<h1 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a><strong>软件下载</strong></h1><p>[3/19/2018] 采用 Azure Blob 共享<br><a href="https://franklininternals1397.blob.core.windows.net/test/TaylorPicAssistantV2.3.zip" target="_blank" rel="noopener">点击下载</a></p>
 <h1 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a><strong>使用方式</strong></h1><ol>
 <li><p>输入相册链接，其中链接格式如下：<br>相册地址格式：<a href="http://www.taylorpictures.net/thumbnails.php?album=XXXXX" target="_blank" rel="noopener">http://www.taylorpictures.net/thumbnails.php?album=XXXXX</a> 或 <a href="http://taylorpictures.net/thumbnails.php?album=XXXXX" target="_blank" rel="noopener">http://taylorpictures.net/thumbnails.php?album=XXXXX</a><br>其中XXXXX为数字，是相册的数字代号<br>（浏览器打开相册，复制地址栏链接即可）</p>
 <p>或者选择监控剪贴板，复制链接后，即可自动抓取符合格式的链接，并且有弹出窗口提示</p>
@@ -456,7 +456,11 @@
 </ol>
 <h1 id="演示录像-Gif"><a href="#演示录像-Gif" class="headerlink" title="演示录像(Gif)"></a><strong>演示录像(Gif)</strong></h1><p><a href="/img/taylorpicassistantv2.1demo.gif"><strong>点击链接查看</strong></a></p>
 <p><em>欢迎反馈使用问题和改进意见</em></p>
-<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a><strong>更新日志</strong></h1><h2 id="2-2正式版-2018-12-23"><a href="#2-2正式版-2018-12-23" class="headerlink" title="2.2正式版(2018/12/23)"></a><strong>2.2正式版(2018/12/23)</strong></h2><ol>
+<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a><strong>更新日志</strong></h1><h2 id="2-3正式版-2020-08-09"><a href="#2-3正式版-2020-08-09" class="headerlink" title="2.3正式版(2020/08/09)"></a><strong>2.3正式版(2020/08/09)</strong></h2><ol>
+<li>修正艺术馆页面更新带来的解析问题</li>
+<li>更新最新域名</li>
+</ol>
+<h2 id="2-2正式版-2018-12-23"><a href="#2-2正式版-2018-12-23" class="headerlink" title="2.2正式版(2018/12/23)"></a><strong>2.2正式版(2018/12/23)</strong></h2><ol>
 <li>因为艺术馆全站启用HTTPS安全链接，下载失效。此版本主要解决此问题</li>
 <li>修复某些相册不合法字符提示的问题，例如：<a href="https://www.taylorpictures.net/thumbnails.php?album=3603" target="_blank" rel="noopener">https://www.taylorpictures.net/thumbnails.php?album=3603</a></li>
 <li>配置文件中支持超时秒数控制，默认20秒。对于某些相册中个别图片一直下载失败，可以尝试设置较大的秒数，这个取决于您的网络下载环境。例如慢速网络下，此数值设置为较大的整数，有利于程序等待下载完毕<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 单张照片下载超时时间, 单位为秒(second)。默认为20s</span><br><span class="line">downloadTimeout: 20</span><br></pre></td></tr></table></figure>
