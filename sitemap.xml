@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://msftbot.com/about/index.html</loc>
+    
+    <lastmod>2020-08-10T06:31:19.027Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
     
     <lastmod>2020-08-09T13:37:38.914Z</lastmod>
@@ -23,14 +30,14 @@
   </url>
   
   <url>
-    <loc>http://msftbot.com/2017/11/09/setting-shadowsocks-server/</loc>
+    <loc>http://msftbot.com/2018/04/03/typescript-notes/</loc>
     
     <lastmod>2020-02-19T10:43:26.847Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://msftbot.com/2018/04/03/typescript-notes/</loc>
+    <loc>http://msftbot.com/2017/11/09/setting-shadowsocks-server/</loc>
     
     <lastmod>2020-02-19T10:43:26.847Z</lastmod>
     
@@ -44,9 +51,9 @@
   </url>
   
   <url>
-    <loc>http://msftbot.com/about/index.html</loc>
+    <loc>http://msftbot.com/2018/01/31/blender_notes/</loc>
     
-    <lastmod>2020-02-19T10:43:26.847Z</lastmod>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     
   </url>
   
@@ -65,14 +72,7 @@
   </url>
   
   <url>
-    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
-    
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://msftbot.com/2017/12/03/final-cut-pro-x-learning-notes-md/</loc>
+    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
     
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     
@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
+    <loc>http://msftbot.com/2017/12/03/final-cut-pro-x-learning-notes-md/</loc>
     
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://msftbot.com/2018/01/31/blender_notes/</loc>
+    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
     
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     
