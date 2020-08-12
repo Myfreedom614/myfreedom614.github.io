@@ -3,10 +3,9 @@
 
 
     
-    
   <url>
     <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
-    <lastmod>2020-08-09T13:37:38.914Z</lastmod>
+    <lastmod>2020-08-12T06:43:02.875Z</lastmod>
     <data>
         <display>
         <title>Taylor艺术馆助手(TaylorPicAssistant)</title>
@@ -28,27 +27,6 @@
     
     
     
-  <url>
-    <loc>http://msftbot.com/2018/04/03/typescript-notes/</loc>
-    <lastmod>2020-02-19T10:43:26.847Z</lastmod>
-    <data>
-        <display>
-        <title>TypeScript Notes</title>
-        <pubTime>2018-04-03T08:23:40.000Z</pubTime>
-        
-        <tag>TypeScript</tag>
-         
-        <tag>TS</tag>
-         
-         
-           
-             
-              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://msftbot.com/2017/11/09/setting-shadowsocks-server/</loc>
@@ -72,25 +50,67 @@
     </url>
 
     
-    
   <url>
-    <loc>http://msftbot.com/2018/01/31/blender_notes/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <loc>http://msftbot.com/2018/04/03/typescript-notes/</loc>
+    <lastmod>2020-02-19T10:43:26.847Z</lastmod>
     <data>
         <display>
-        <title>Blender Learning Notes</title>
-        <pubTime>2018-01-31T07:08:00.000Z</pubTime>
+        <title>TypeScript Notes</title>
+        <pubTime>2018-04-03T08:23:40.000Z</pubTime>
         
-        <tag>Blender</tag>
+        <tag>TypeScript</tag>
          
-        <tag>3D</tag>
-         
-        <tag>Animation</tag>
+        <tag>TS</tag>
          
          
            
              
-              <breadCrumb title="Media" url="http://msftbot.com/categories/Media/"/>
+              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://msftbot.com/2017/11/09/create-ci-jenkins-ubuntu14/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>Create a Continuous Integration Server With Jenkins On Ubuntu 14.04</title>
+        <pubTime>2017-11-09T23:36:37.000Z</pubTime>
+        
+        <tag>CI</tag>
+         
+        <tag>Jenkins</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>.Net Core Installation</title>
+        <pubTime>2016-11-30T16:00:00.000Z</pubTime>
+        
+        <tag>dotNet</tag>
+         
+         
+           
+             
+              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
           
         </display>
     </data>
@@ -126,23 +146,23 @@
 
     
   <url>
-    <loc>http://msftbot.com/2017/11/09/create-ci-jenkins-ubuntu14/</loc>
+    <loc>http://msftbot.com/2018/01/31/blender_notes/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
         <display>
-        <title>Create a Continuous Integration Server With Jenkins On Ubuntu 14.04</title>
-        <pubTime>2017-11-09T23:36:37.000Z</pubTime>
+        <title>Blender Learning Notes</title>
+        <pubTime>2018-01-31T07:08:00.000Z</pubTime>
         
-        <tag>CI</tag>
+        <tag>Blender</tag>
          
-        <tag>Jenkins</tag>
+        <tag>3D</tag>
          
-        <tag>Ubuntu</tag>
+        <tag>Animation</tag>
          
          
            
              
-              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
+              <breadCrumb title="Media" url="http://msftbot.com/categories/Media/"/>
           
         </display>
     </data>
@@ -150,19 +170,19 @@
 
     
   <url>
-    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
+    <loc>http://msftbot.com/2017/12/03/final-cut-pro-x-learning-notes-md/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
         <display>
-        <title>Python Common Library</title>
-        <pubTime>2018-02-27T00:26:26.000Z</pubTime>
+        <title>Final Cut Pro X Learning Notes</title>
+        <pubTime>2017-12-03T22:04:16.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>FCPX</tag>
          
          
            
              
-              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
+              <breadCrumb title="Media" url="http://msftbot.com/categories/Media/"/>
           
         </display>
     </data>
@@ -194,34 +214,14 @@
 
     
   <url>
-    <loc>http://msftbot.com/2017/12/03/final-cut-pro-x-learning-notes-md/</loc>
+    <loc>http://msftbot.com/2018/02/27/python-common-lib/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
         <display>
-        <title>Final Cut Pro X Learning Notes</title>
-        <pubTime>2017-12-03T22:04:16.000Z</pubTime>
+        <title>Python Common Library</title>
+        <pubTime>2018-02-27T00:26:26.000Z</pubTime>
         
-        <tag>FCPX</tag>
-         
-         
-           
-             
-              <breadCrumb title="Media" url="http://msftbot.com/categories/Media/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>.Net Core Installation</title>
-        <pubTime>2016-11-30T16:00:00.000Z</pubTime>
-        
-        <tag>dotNet</tag>
+        <tag>Python</tag>
          
          
            
