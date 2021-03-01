@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
-    <lastmod>2020-08-12T06:43:02.875Z</lastmod>
+    <lastmod>2021-03-01T10:20:52.048Z</lastmod>
     <data>
         <display>
         <title>Taylor艺术馆助手(TaylorPicAssistant)</title>
@@ -24,6 +24,7 @@
     </data>
     </url>
 
+    
     
     
     
@@ -74,50 +75,6 @@
     
     
   <url>
-    <loc>http://msftbot.com/2017/11/09/create-ci-jenkins-ubuntu14/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>Create a Continuous Integration Server With Jenkins On Ubuntu 14.04</title>
-        <pubTime>2017-11-09T23:36:37.000Z</pubTime>
-        
-        <tag>CI</tag>
-         
-        <tag>Jenkins</tag>
-         
-        <tag>Ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>.Net Core Installation</title>
-        <pubTime>2016-11-30T16:00:00.000Z</pubTime>
-        
-        <tag>dotNet</tag>
-         
-         
-           
-             
-              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://msftbot.com/2018/01/30/compression_decompression_linux/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
@@ -163,6 +120,50 @@
            
              
               <breadCrumb title="Media" url="http://msftbot.com/categories/Media/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>.Net Core Installation</title>
+        <pubTime>2016-11-30T16:00:00.000Z</pubTime>
+        
+        <tag>dotNet</tag>
+         
+         
+           
+             
+              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://msftbot.com/2017/11/09/create-ci-jenkins-ubuntu14/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>Create a Continuous Integration Server With Jenkins On Ubuntu 14.04</title>
+        <pubTime>2017-11-09T23:36:37.000Z</pubTime>
+        
+        <tag>CI</tag>
+         
+        <tag>Jenkins</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
           
         </display>
     </data>
