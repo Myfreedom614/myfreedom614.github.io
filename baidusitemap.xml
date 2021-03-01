@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
-    <lastmod>2021-03-01T10:20:52.048Z</lastmod>
+    <lastmod>2021-03-01T10:28:10.794Z</lastmod>
     <data>
         <display>
         <title>Taylor艺术馆助手(TaylorPicAssistant)</title>
@@ -75,34 +75,6 @@
     
     
   <url>
-    <loc>http://msftbot.com/2018/01/30/compression_decompression_linux/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>Compression & Decompression on Linux</title>
-        <pubTime>2018-01-30T07:01:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Zip</tag>
-         
-        <tag>Unzip</tag>
-         
-        <tag>Gzip</tag>
-         
-        <tag>Tar</tag>
-         
-         
-           
-             
-              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://msftbot.com/2018/01/31/blender_notes/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
@@ -127,26 +99,6 @@
 
     
   <url>
-    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>.Net Core Installation</title>
-        <pubTime>2016-11-30T16:00:00.000Z</pubTime>
-        
-        <tag>dotNet</tag>
-         
-         
-           
-             
-              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://msftbot.com/2017/11/09/create-ci-jenkins-ubuntu14/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
@@ -164,6 +116,26 @@
            
              
               <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://msftbot.com/2016/11/30/dotnet-core-installation/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>.Net Core Installation</title>
+        <pubTime>2016-11-30T16:00:00.000Z</pubTime>
+        
+        <tag>dotNet</tag>
+         
+         
+           
+             
+              <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
           
         </display>
     </data>
@@ -228,6 +200,34 @@
            
              
               <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://msftbot.com/2018/01/30/compression_decompression_linux/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>Compression & Decompression on Linux</title>
+        <pubTime>2018-01-30T07:01:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Zip</tag>
+         
+        <tag>Unzip</tag>
+         
+        <tag>Gzip</tag>
+         
+        <tag>Tar</tag>
+         
+         
+           
+             
+              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
           
         </display>
     </data>
