@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://msftbot.com/2018/12/22/taylorpicassistant/</loc>
-    <lastmod>2021-03-01T10:28:10.794Z</lastmod>
+    <lastmod>2021-03-03T07:21:49.928Z</lastmod>
     <data>
         <display>
         <title>Taylor艺术馆助手(TaylorPicAssistant)</title>
@@ -99,18 +99,22 @@
 
     
   <url>
-    <loc>http://msftbot.com/2017/11/09/create-ci-jenkins-ubuntu14/</loc>
+    <loc>http://msftbot.com/2018/01/30/compression_decompression_linux/</loc>
     <lastmod>2020-02-19T10:43:26.835Z</lastmod>
     <data>
         <display>
-        <title>Create a Continuous Integration Server With Jenkins On Ubuntu 14.04</title>
-        <pubTime>2017-11-09T23:36:37.000Z</pubTime>
+        <title>Compression & Decompression on Linux</title>
+        <pubTime>2018-01-30T07:01:00.000Z</pubTime>
         
-        <tag>CI</tag>
+        <tag>Linux</tag>
          
-        <tag>Jenkins</tag>
+        <tag>Zip</tag>
          
-        <tag>Ubuntu</tag>
+        <tag>Unzip</tag>
+         
+        <tag>Gzip</tag>
+         
+        <tag>Tar</tag>
          
          
            
@@ -136,6 +140,30 @@
            
              
               <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://msftbot.com/2017/11/09/create-ci-jenkins-ubuntu14/</loc>
+    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
+    <data>
+        <display>
+        <title>Create a Continuous Integration Server With Jenkins On Ubuntu 14.04</title>
+        <pubTime>2017-11-09T23:36:37.000Z</pubTime>
+        
+        <tag>CI</tag>
+         
+        <tag>Jenkins</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
           
         </display>
     </data>
@@ -200,34 +228,6 @@
            
              
               <breadCrumb title="Dev" url="http://msftbot.com/categories/Dev/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://msftbot.com/2018/01/30/compression_decompression_linux/</loc>
-    <lastmod>2020-02-19T10:43:26.835Z</lastmod>
-    <data>
-        <display>
-        <title>Compression & Decompression on Linux</title>
-        <pubTime>2018-01-30T07:01:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Zip</tag>
-         
-        <tag>Unzip</tag>
-         
-        <tag>Gzip</tag>
-         
-        <tag>Tar</tag>
-         
-         
-           
-             
-              <breadCrumb title="Deploy" url="http://msftbot.com/categories/Deploy/"/>
           
         </display>
     </data>
